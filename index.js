@@ -144,6 +144,22 @@
 // "https://www.google.com/search" → "google"
 
 // 25. Count frequency of each character in a string.
-let a = [""] 
-// Output as object:
-// { a: 3, b: 1, n: 2 }
+// let a = [""] 
+// // Output as object:
+// // { a: 3, b: 1, n: 2 }
+
+// array insertion dsa 
+
+
+// Using object to store counts.
+let a = [8,6,5,5,5,5,5,7];
+let position =0;
+
+
+for(let i = position; i<a.length-1;i++){
+      a[i]=a[i+1];
+      
+}
+a.length = a.length-1
+console.log(a);
+ 
