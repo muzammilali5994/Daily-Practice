@@ -152,14 +152,53 @@
 
 
 // Using object to store counts.
-let a = [8,6,5,5,5,5,5,7];
-let position =0;
+// let a = [8,6,5,5,5,5,5,7];
+// let position =0;
 
 
-for(let i = position; i<a.length-1;i++){
-      a[i]=a[i+1];
+// for(let i = position; i<a.length-1;i++){
+//       a[i]=a[i+1];
       
-}
-a.length = a.length-1
-console.log(a);
+// }
+// a.length = a.length-1
+// console.log(a);
  
+// // slice
+// let arr = [1, 2, 3, 4, 5];
+// let result = arr.slice(1, 4);
+
+// console.log(result);
+// console.log(arr);
+
+// let arr = [10, 20, 30, 40];
+// let result = arr.splice(1, 2);
+
+// console.log(result);
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5,9,8,7,5,4,6,6,6,6];
+// arr.splice(2,2,6,6);
+
+// console.log(arr);
+
+// let arr = [1, 2, 3];
+// let a = arr.slice();
+// //let b = arr.splice(0, 1);
+
+// console.log(a);
+
+// let arr = [5, 6, 7];
+// let copy = arr.slice();
+
+// console.log(copy);
+
+
+// let arr = [1, 2, 3, 4];
+
+// arr.splice(2,2);
+// console.log(arr);
+
+
+
+
+
