@@ -222,13 +222,13 @@
 // console.log(largest); // 5
 
 
-let arr = [0,9,8,7,7,8,1, 2, 3, 4];
+// let arr = [0,9,8,7,7,8,1, 2, 3, 4];
 
-arr.sort()
+// arr.sort()
 
 
 
-console.log(arr.length-2); // 5
+// console.log(arr.length-2); // 5
 
 
 
