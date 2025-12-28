@@ -234,6 +234,12 @@
 
 
 
+let prices = [100, 200, 300];
+
+let finalPrices = prices.map(p => p + p * 0.10);
+
+console.log(finalPrices);
+// [110, 220, 330]
 
 
 
