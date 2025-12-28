@@ -234,14 +234,24 @@
 
 
 
-let prices = [100, 200, 300];
+// let prices = [100, 200, 300];
 
-let finalPrices = prices.map(p => p + p * 0.10);
+// let finalPrices = prices.map(x => x * 10);
 
-console.log(finalPrices);
-// [110, 220, 330]
+// console.log(finalPrices);
+// // [110, 220, 330]
+// let prices = [100, 200, 300];
 
+// let finalPrices = prices.map(function(x) {
+//   return x + x * 0.1;
+// });
 
+// console.log(finalPrices);
 
+// let prices = [100, 200, 300,"sdf",null,undefined,true];
+
+// let finalresult = prices.map(x=>x*2);
+
+// console.log(finalresult);
 
 
