@@ -254,4 +254,51 @@
 
 // console.log(finalresult);
 
+// let prices = [100, 200, 300];
+// let finalPrices = prices.filter(x => x < 150);
+// console.log(finalPrices); // [200, 300]
 
+// let shareprice = [100,200,300,400,500];
+// let finalshareprice = shareprice.reduce((acc, x) => {
+//   if (x > 250) {
+//     acc.push(x);
+//   }
+//   return acc;
+// }, []);
+// console.log(finalshareprice); // [300,400,500]
+
+let str = "Muzammil";
+
+while(str.length < 15){
+    str = str + "*";
+    console.log(str);
+}   
+ ********Muzammil
+
+ let shoesprices = [1000,2000,3000,4000,5000];
+    let discountprices = shoesprices.map(x => x - x * 0.1);
+    console.log(discountprices); // [900,1800,2700,3600,4500]
+
+ let shoespricess = [1000,2000,3000,4000,5000];
+    let discountpricess = shoesprices.filter(x => x - x * 0.1);
+    console.log(discountpricess); // [900,1800,2700,3600,4500]
+
+let users = [
+  { name: "Ali", active: true },
+  { name: "Ahmed", active: false },
+  { name: "Sara", active: true }
+];
+let activeUsers = users.filter(user => user.active);
+console.log(activeUsers);
+
+let fruits = ["apple", "banana", "mango"];
+
+fruits.forEach((item, index) => {
+  console.log(index, item);
+});
+
+let nums = [1, 2, 3, 4, 5, 6];
+
+let evenNum = nums.filter(x => x%2 ===0).map(x => x*2   ).reverse().join(", ");
+
+console.log(evenNum); // [4, 8, 12]
