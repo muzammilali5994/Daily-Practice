@@ -229,7 +229,7 @@ arr.sort()
 
 
 console.log(arr.length-2); // 5
-
+// latest udpates
 
 
 
