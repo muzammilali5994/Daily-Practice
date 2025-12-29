@@ -304,23 +304,36 @@
 // console.log(evenNum); // [4, 8, 12]
 
 
-Array.prototype.doubleMap = function(cb){
-    let output = [];
-    for(let i = 0; i < this.length; i++){
-        output.push(cb(this[i], i, this));
-    }
-    return output;
-};
+// Array.prototype.doubleMap = function(cb){
+//     let output = [];
+//     for(let i = 0; i < this.length; i++){
+//         output.push(cb(this[i], i, this));
+//     }
+//     return output;
+// };
 
-let nums = [1,2,3];
-let result = nums.doubleMap(n => n*2);
-console.log(result); // [2,4,6]
+// let nums = [1,2,3];
+// let result = nums.doubleMap(n => n*2);
+// console.log(result); // [2,4,6]
 
 
-let prices = [100, 200, 300];
+// let prices = [100, 200, 300];
 
-let withTax = prices.map(p => p + p * 0.17);
-console.log(withTax); // [117, 234, 351]
+// let withTax = prices.map(p => p + p * 0.17);
+// console.log(withTax); // [117, 234, 351]
 
-let withTax2 = prices.doubleMap(p => p + p * 0.17);
-console.log(withTax2); // [117, 234, 351]
+// let withTax2 = prices.doubleMap(p => p + p * 0.17);
+// console.log(withTax2); // [117, 234, 351]
+
+
+
+let users = [
+  { id: 1, fname: "Ali", lname: "Khan" },
+  { id: 2, fname: "Sara", lname: "Ahmed" }
+];
+
+let fullNames = users.map(u => ({
+  id: u.id,
+  name: `${u.fname} ${u.lname}`
+}));
+console.log(fullNames);
