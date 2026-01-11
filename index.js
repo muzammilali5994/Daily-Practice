@@ -464,3 +464,18 @@ document.write("<br> Unique emails are: " + unique);
 let result = Set(emails);
 console.log(result);  
 document.write("<br> Unique emails using set are: " + result);
+
+
+function validateEmail(email) {
+  if (
+    email.includes("@") &&
+    email.includes(".") &&
+    email.indexOf("@") < email.lastIndexOf(".")
+  ) {
+    return "Valid Email";
+  } else {
+    return "Invalid Email";
+  }
+}
+
+console.log(validateEmail("test@gmail.com"));
