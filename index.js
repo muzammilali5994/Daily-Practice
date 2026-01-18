@@ -479,3 +479,19 @@ function validateEmail(email) {
 }
 
 console.log(validateEmail("test@gmail.com"));
+
+let company = {
+  name: "ABC Corp",
+  employees: [
+    { name: "Ali", salary: 50000 },
+    { name: "Sara", salary: 60000 }
+  ]
+};
+
+let totalSalary = 0;
+
+for (let emp of company.employees) {
+  totalSalary += emp.salary;
+}
+
+document.writeln("Total Salary: " + totalSalary);
