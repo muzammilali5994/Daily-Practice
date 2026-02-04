@@ -495,3 +495,20 @@ for (let emp of company.employees) {
 }
 
 document.writeln("Total Salary: " + totalSalary);
+function saveData() {
+   let data  = {
+        name: "Muzammil",
+        age: 24,
+        city: "Karachi"
+   };
+   
+  let rt = localStorage.setItem("userData", JSON.stringify(data));
+   document.getElementById("sp").innerText = "Data saved successfully!";
+}
+
+function getData() {
+
+  let reteriveData = localStorage.getItem("userData");
+  let objData = JSON.parse(reteriveData);
+  document.getElementById("sp").innerText = `Name: ${objData.name}, Age: ${objData.age}, City: ${objData.city}`;
+}
