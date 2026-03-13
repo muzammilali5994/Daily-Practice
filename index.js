@@ -612,3 +612,55 @@ function clearField(){
   document.getElementById("name").value = "";
   document.getElementById("lastName").value = "";
 }
+
+
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Data Loaded");
+}, 2000);
+
+console.log("End");
+
+const promise = new Promise((resolve, reject) => {
+  let success = true;
+
+  if (success) {
+    resolve("Data received");
+  } else {
+    reject("Error occurred");
+  }
+});
+
+promise
+  .then(result => console.log(result))
+  .catch(error => console.log(error));
+
+  fetch("https://api.example.com/user")
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+    return data.id;
+  })
+  .then(id => console.log("User ID:", id))
+  .catch(err => console.log(err));
+
+  async function getData() {
+  const response = await fetch("https://api.example.com/data");
+  const data = await response.json();
+  console.log(data);
+}
+
+getData();
+
+
+fetch("https://api.com/posts", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    title: "Hello",
+    body: "Post content"
+  })
+});
