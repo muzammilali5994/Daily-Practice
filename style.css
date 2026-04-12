@@ -143,6 +143,6 @@
   right: 5%;
   width: 400px;  /* Width set hona bohot zaroori hai */
   height: 400px; /* Height set hona bohot zaroori hai */
-  z-index: 10;   /* Dosre elements ke upar laane ke liye */
+  z-index: 1000;   /* Dosre elements ke upar laane ke liye */
   pointer-events: none; /* Taake iske peechay wale buttons click ho sakein */
 }

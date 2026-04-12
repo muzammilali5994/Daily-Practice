@@ -20,17 +20,21 @@ gsap.from('.email-input',{
         // --------------------------------------------------------
         // 1. SCENE SETUP (The Basics)
         // --------------------------------------------------------
-        const canvas = document.querySelector('#webgl-canvas');
+        const canvas = document.querySelector('#three-container');
         const scene = new THREE.Scene();
 
-        const sizes = { width: window.innerWidth, height: window.innerHeight };
+        const sizes = { 
+    width: 400, 
+    height: 400 
+};
+
         const camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height, 0.1, 100);
         camera.position.z = 10; // Move camera back so we can see the object
         scene.add(camera);
 
         const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
         renderer.setSize(sizes.width, sizes.height);
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        // renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
         // --------------------------------------------------------
         // 2. LIGHTING (To make the 3D shape look 3D)
@@ -63,7 +67,7 @@ gsap.from('.email-input',{
         const gem = new THREE.Mesh(geometry, material);
         
         // Offset it slightly to the right so it doesn't block the text
-        gem.position.x = 2;
+        gem.position.x = -1;
         scene.add(gem);
 
         // --------------------------------------------------------
@@ -109,9 +113,7 @@ gsap.from('.email-input',{
         };
         tick();
 
-        // --------------------------------------------------------
-        // 6. RESIZE HANDLER (Keep things responsive)
-        // --------------------------------------------------------
+ 
         window.addEventListener('resize', () => {
             sizes.width = window.innerWidth;
             sizes.height = window.innerHeight;
