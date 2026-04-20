@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import Navigation from "./router/navigation";
+import Object from '../pages/object';
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Navigation />
       <h1 className='text-3xl font-bold underline'>Welcome to My App</h1>
+      <Object/>
     </div>
   );
 }
