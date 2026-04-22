@@ -2,19 +2,19 @@ import React from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 
-function model() {
-  return (
-    <div style={{ height: '100vh', width: '100vw' }}>
-      <Canvas camera={{ position: [0, 0, 5] }}>
-        <mesh rotation={[0.5, 0.5, 0]}>
-            <boxGeometry args={[1, 1, 1]} />
-            <meshStandardMaterial color="orange" />
+function Model() {
+  return(
+    <div style={{width:'300px', height:'300px'}}>
+      <Canvas camera={{position: [5, 5, 5]}}>
+        <mesh>
+          <boxGeometry args={[3, 3, 3]} />
+          <meshStandardMaterial color="orange" />
         </mesh>
         <ambientLight intensity={1} />
-        <OrbitControls />
+        <OrbitControls enableZoom={true} />
       </Canvas>
     </div>
   )
-}
 
-export default model
+}
+export default Model
