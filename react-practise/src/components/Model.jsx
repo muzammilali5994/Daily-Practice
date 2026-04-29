@@ -10,6 +10,9 @@ function Model() {
       <h1>asdf</h1>
         <h1>3D Model</h1>
       <h1>asdf</h1>
+            <h1>asdf</h1>
+        <h1>3D Model</h1>
+      <h1>asdf</h1>
       <Canvas camera={{position: [5, 5, 5]}}>
         <mesh>
           <boxGeometry args={[3, 3, 3]} />
